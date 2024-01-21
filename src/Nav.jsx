@@ -100,7 +100,7 @@ const Nav = ({ setDataUser }) => {
           email: signupData.email
         });
         if (response.status === 200) {
-          alert('Sign up successful');
+          alert('สมัครสมาชิกเรียบร้อย');
           setShowSignupForm(false);
           setsignupData({
             email: '',
@@ -111,10 +111,11 @@ const Nav = ({ setDataUser }) => {
           console.error('error');
         }
       } else {
-        alert('Sign up error');
+        alert('กรุณากรอกข้อมูลให้ครบถ้วน');
       }
     } catch (error) {
       console.error('Error:', error);
+      alert("มีผู้ใช้ Email หรือ Username นี้แล้ว");
     }
   };
 

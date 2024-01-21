@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-const SettingsContent = ({ dataUser }) => {
+const SettingsContent = ({ dataUser, setDataUser }) => {
   const getData = () => {
     console.log(dataUser);
   }
