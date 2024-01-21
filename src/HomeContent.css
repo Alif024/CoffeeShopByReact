@@ -1,0 +1,116 @@
+.content-body-home {
+  height: auto;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+}
+
+.content-body-home>.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 2px solid #ECEDED;
+  padding-bottom: 17px;
+}
+
+.content-body-home>.title h3 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.content-body-home>.title button {
+  padding: 10px 20px;
+  margin-left: 30px;
+  border-radius: 5px;
+  border: none;
+  color: #D9D9D9;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.content-body-home>.title>.title-right>button.active {
+  background-color: #E8C5A3;
+  color: #000;
+}
+
+.content-body-home>.content-table-select {
+  width: 100%;
+  height: 62vh;
+  padding: 0px 24px;
+  overflow: auto;
+  border-bottom: 2px solid #ECEDED;
+  /* border: 1px solid red; */
+}
+
+/* footer */
+.selection-continue {
+  width: 100%;
+  height: 172px;
+  padding: 0px 24px;
+}
+
+.details-footer-home {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 21px;
+  /* border: 1px solid red; */
+}
+
+.selection>.details-footer-home>.detail-left {
+  display: flex;
+}
+
+.selection>.details-footer-home>.detail-left>.table,
+.selection>.details-footer-home>.detail-left>.guess {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-right: 45px;
+  width: 99px;
+}
+
+button.selection-continue-footer-home {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  background: #4A5C2F;
+  padding: 19px 44px;
+  border: none;
+  color: #D8E6E9;
+  cursor: pointer;
+}
+
+button.selection-continue-footer-home:active {
+  background: #74973f;
+  color: #4A5C2F;
+}
+
+.number-guess-footer-home,
+.number-table-footer-home {
+  color: var(--salmon-salmon, #D89F65);
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.details-footer-home>.detail-left p {
+  margin-left: 12px;
+}
+
+.content-body-home>.content-table-select>.table {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+  padding-bottom: 42px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+  grid-gap: 29px;
+  justify-items: center;
+}

@@ -1,0 +1,22 @@
+.content-body {
+  min-height: 89vh;
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.content-body-left {
+  width: 9%;
+  /* border: 1px solid red; */
+  border-right: 2px solid #ECEDED;
+}
+
+.content-body-middle {
+  width: 68%;
+  /* border: 1px solid red; */
+}
+
+.content-body-right {
+  width: 23%;
+  /* border: 1px solid red; */
+  border-left: 2px solid #ECEDED;
+}

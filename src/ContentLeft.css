@@ -1,0 +1,48 @@
+.content-left-nav {
+  height: 77.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  /* padding-bottom: 100px; */
+}
+
+.content-left-nav>.item {
+  cursor: pointer;
+}
+
+.content-left-nav>.item:hover path,
+.content-left-nav>.item:hover p {
+  fill: #828080;
+  color: #e5ac74;
+}
+
+.content-left-nav>.item svg {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+  height: 3vh;
+}
+
+.content-left-nav>.item p {
+  /* border: 1px solid red; */
+  text-align: center;
+  color: rgba(0, 0, 0, 0.26);
+  font-size: 2vh;
+}
+
+.content-left-nav>p {
+  margin-top: 30px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.item.active path {
+  fill: #000;
+}
+
+.content-left-nav>.active p {
+  color: #A2774C;
+}
