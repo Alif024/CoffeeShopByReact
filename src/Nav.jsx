@@ -61,7 +61,7 @@ function updateDateTime(currentDateTime) {
 }
 
 // eslint-disable-next-line react/prop-types
-const Nav = ({ setDataUser }) => {
+const Nav = ({ setDataUser, setSelectedContent }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const [Username, setUsername] = useState('');
@@ -159,6 +159,7 @@ const Nav = ({ setDataUser }) => {
 
   const SignOut = () => {
     setIsLoggedIn(false);
+    setSelectedContent('HOME');
     setDataUser(null);
   };
 

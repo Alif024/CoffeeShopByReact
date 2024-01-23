@@ -1,7 +1,7 @@
 import './ContentLeft.css'
 
 // eslint-disable-next-line react/prop-types
-const ContentLeft = ({ onSelectContent, selectedContent }) => {
+const ContentLeft = ({ onSelectContent, selectedContent, dataUser }) => {
   return (
     <div className="content-left-nav">
       <div className={`item ${selectedContent === 'HOME' ? 'active' : ''}`} onClick={() => onSelectContent('HOME')}>
@@ -40,7 +40,13 @@ const ContentLeft = ({ onSelectContent, selectedContent }) => {
         </svg>
         <p id="text-orders">ORDERS</p>
       </div>
-      <div className={`item ${selectedContent === 'SETTINGS' ? 'active' : ''}`} onClick={() => onSelectContent('SETTINGS')}>
+      <div className={`item ${selectedContent === 'SETTINGS' ? 'active' : ''}`} onClick={() => {
+        if (dataUser !== undefined && dataUser !== null) {
+          onSelectContent('SETTINGS')
+        } else {
+          alert("เข้าสู่ระบบให้เรียบร้อยก่อน");
+        }
+      }}>
         <svg id="icon-settings" xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24"
           fill="none">
           <path
